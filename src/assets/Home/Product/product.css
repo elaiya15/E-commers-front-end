@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+
+.productdata{
+  user-select: none;
+    width: auto;
+    height: auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+     gap: 50px;
+}
+
+
+
+
+.productItem{
+  font-family: 'Cabin', sans-serif;
+    padding: 0.5rem;
+    border-radius: 13px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color:rgba(255, 255, 255, 0.87);
+    /* background-color: rgb(249, 249, 249); */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.productImg{
+  -webkit-user-drag: none;
+  user-select: none;
+    height: 150px;
+    width: 160px;
+}
+.em{
+    font-weight: 10;
+   font-size: 16px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.h3{
+  
+   font-weight: 10px;
+   font-size: 18px;
+   font-family: 'Cabin', sans-serif;
+   
+}
+
+.addCart {
+  margin-top: 5px;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 418;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #53ad7b;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .addCart:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  }
+  
+  .addCart:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+  }
+
+  @media screen and (max-width: 425px){
+
+    .productdata{
+      
+        overflow-y: scroll;
+        width: 360px;
+        gap: 40px;
+        height: 80vh;
+    }
+    .productItem{
+      /* width: auto; */
+  background-color: white;
+    }
+
+  }

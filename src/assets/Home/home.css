@@ -1,0 +1,22 @@
+.homepage{
+   
+    margin-top: 0px;
+    margin-left: -10px;
+    width: 1256px;
+    height: auto;
+    background-color: rgba(0, 255, 119, 0.214);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    /* overflow-y:hidden; */
+    /* overflow-y: scroll; */
+}
+@media screen and (max-width: 625px){
+  
+    .homepage{
+        width: auto;
+        height: auto;
+    }
+  }
+  
+ 

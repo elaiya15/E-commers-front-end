@@ -1,0 +1,97 @@
+.loginhead{
+    position: relative;
+    top: 60px;
+    /* margin-top: 25px; */
+/* background-color:rgba(0, 255, 119, 0.11); */
+    /* width:80vw ; */
+    min-width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+}
+.log{ font-size: 20;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+}
+
+
+.logicon{
+    width: 30%;
+    height: 35%;
+}
+.happy{
+    position: absolute;
+    bottom: 4px;
+    right: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 75px;
+}
+
+.logtitel{
+    position: relative;
+    text-align: center;
+    font-family: 'Righteous', 'cursive';
+    font-size: 20;
+    font-weight: 100;
+    color: #19a83fe8;
+}
+
+.signinpage{
+    position: relative;
+    /* right: 12%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/* position: relative; */
+    margin-right: 30px;
+    background-color: #ffffff;
+    width: 320px;
+    height: 470px;
+    box-shadow: #01fb44 0px 30px 50px, #01fb44 0px -15px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.viewDemo{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #19a83fe8;
+    font-weight: 500;
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    gap: 5px;
+}
+.viewDemo:hover{ 
+    text-align: center;
+}
+
+@media screen and (max-width: 425px){
+    
+
+    .loginhead{
+        top: 0px;
+        margin-top: 0px;
+/* background-color: #01fb44; */
+         width:  auto;
+        height: 90vh; 
+    }
+
+    .logicon{
+        display: none;
+    }
+    .signinpage{
+        position: relative;
+      /* text-align: center; */
+        width: auto;
+        height: auto;
+        left: 15px;
+        box-shadow:none;
+    }
+
+}

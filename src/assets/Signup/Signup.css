@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.head{
+    /* background-color: #0a41d8; */
+   margin-top: 8%;
+   margin-right: 1%;
+background-color:none;
+  width: auto;
+   height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: center;
+    /* justify-content: center; */
+     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  */
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #0a41d8; */
+    position: relative;
+    bottom: 10px;
+    width: 300px;
+}
+
+.animation{
+  
+    margin-right: 50px;
+    position: relative;
+
+    height: 400px;
+    width: 400px;
+ /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */ 
+}
+.singup{
+    
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 30px;
+    width: 320px;
+    height: 470px;
+    box-shadow: #01fb44 0px 30px 50px, #01fb44 0px -15px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.createh2{
+    font-size: 20;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+.icon{
+    position: absolute;
+    /* bottom: 80px; */
+    width: 75px;
+}
+.titel{
+   position: relative;
+    text-align: center;
+    font-family: 'Righteous', 'cursive';
+    font-size: 20;
+    font-weight: 100;
+    color: #19a83fe8;
+    width: 320px;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Confirmicon{
+    position: relative;
+    top: 40px;
+    left: 10px;
+    color: #19a83fe8;
+}
+/* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+.eye{
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    left: 10px;
+    color: #19a83fe8;
+}
+.bt{
+   
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.signupbtn {
+    background:  #1cc549e8 ;
+    border-radius: 999px;
+    box-shadow:  #19a83fe8 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Righteous', 'cursive';
+   
+    font-size: 16px;
+    font-weight: 900px;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  }
+  .sigin{
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 900px;
+    line-height: 24px;
+  }
+  .sigin .ac{
+text-decoration: none;
+color: #19a83fe8;
+  }
+  .sigin .ac:hover{
+text-decoration: none;
+color: #0a41d8;
+  }
+
+
+
+  @media screen and (max-width: 625px){
+  
+    .animation{
+
+        display: none;
+    }
+    .head{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        width:100vw;
+        min-width: 318px;
+    }
+    .singup{
+        position: relative;
+        box-shadow:none;
+        height: 70vh;
+        width: 90vw;
+        max-width: 368px;
+        margin-left: 23px;
+    }
+   
+    .icon{
+       
+        position: absolute;
+       margin-right: 100px;
+        /* bottom: 80px; */
+        width: 75px;
+    }
+    .signupbtn{
+        margin-top: 10px;
+    }
+  }

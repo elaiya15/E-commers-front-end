@@ -1,0 +1,18 @@
+#root {
+ 
+  max-width: 1240px;
+  margin: 0 ;
+}
+body {
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+ align-items: center;
+  margin: 0;
+ height: auto;
+ /* scroll-behavior: smooth; */
+ /* overflow-y: scroll;       */
+ overflow-x: hidden;
+}
+
+
