@@ -26,7 +26,7 @@ const logout=()=>{
    <Lottie  className="happyicon" onClick={()=>Bag(!true)} animationData={happy} loop={false}/>
    <h1 className="navtitel"> Happydeal</h1>
    <Lottie  className="carticon" onClick={()=>Bag(true)}animationData={cart} loop={false}/>
-   <img className="logouticon" onClick={logout} src="/public/logout (4).png"/>
+   <img className="logouticon" onClick={logout} src="/logout (4).png"/>
    </div>
 
    </nav>

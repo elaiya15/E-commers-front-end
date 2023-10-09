@@ -103,7 +103,7 @@ const Login = () => {
   <button className="signupbtn" type="submit"  >Sign-in</button> 
   <div className="sigin"> Create New Account <a className="ac"href="/signup">Sign-up </a> </div>
   {/* <a className="ac"href="/home">Demo </a> */}
-  <br/><div className="viewDemo" onClick={ViewDemo}> <img src="/public/eye.png"/>
+  <br/><div className="viewDemo" onClick={ViewDemo}> <img src="/eye.png"/>
   <span >View Demo </span> </div>
    </div>
     </div> 
