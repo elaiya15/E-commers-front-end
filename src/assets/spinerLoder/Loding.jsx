@@ -6,8 +6,8 @@ const Loding = () => {
   return (
     <>
     <div className="loder">
-      <img src="/public/loder.gif"/>
-      <img src="/public/289.gif"/>
+      <img src="/loder.gif"/>
+      <img src="/289.gif"/>
     </div>
     </>
   )
