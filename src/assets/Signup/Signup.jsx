@@ -51,7 +51,7 @@ const handleSubmit= async(e)=>{
   if (FormData.password===FormData.confirmpassword) {
   
     console.log(FormData);
-    const response = await axios.post("http://localhost:4001/register/signup",{
+    const response = await axios.post("https://e-commerce-backend-l51n.onrender.com/register/signup",{
       email:FormData.email,
          password:FormData.password
 
