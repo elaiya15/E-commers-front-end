@@ -1,15 +1,18 @@
+/* eslint-disable no-undef */
 import React from 'react'
+// import dotenv from 'dotenv'
+import happydeal from '/happydeal_icon.png'
 
-import happydeal from '/public/happydeal_icon.png'
 
 const Payment = ({ProductDetails}) => {
+  // dotenv.config();
 // buy
 const BuyNow=(params)=>{
   const amount=params.price
   const options = {
-    key:"rzp_test_KVohU5fo9MQ5oR", // Enter the Key ID generated from the Dashboard
-    key_secret: "ALHWIg38tCL0yQYsjVTjaQsP",
-    amount: amount *100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    key:(import.meta.env.VITE_KEY), 
+    key_secret:(import.meta.env.VITE_KEY_SECRET),
+    amount: amount *100,
     currency: "INR",
     name: "happydeal",
     description: "Test Transaction",
