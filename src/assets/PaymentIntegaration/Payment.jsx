@@ -2,7 +2,9 @@
 import React from 'react'
 // import dotenv from 'dotenv'
 import happydeal from '/happydeal_icon.png'
-
+// dotenv.config();
+// const key=
+console.log(import.meta.env.VITE_KEY) 
 
 const Payment = ({ProductDetails}) => {
   // dotenv.config();
@@ -10,8 +12,9 @@ const Payment = ({ProductDetails}) => {
 const BuyNow=(params)=>{
   const amount=params.price
   const options = {
-    key: "rzp_test_KVohU5fo9MQ5oR", 
-    key_secret: "rzp_test_KVohU5fo9MQ5oR",
+    key: (import.meta.env.VITE_KEY) , 
+    // console.log(key);
+    key_secret:(import.meta.env. VITE_KEY_SECRET),
     amount: amount *100,
     currency: "INR",
     name: "happydeal",
