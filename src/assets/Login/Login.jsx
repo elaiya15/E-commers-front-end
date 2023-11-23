@@ -42,7 +42,7 @@ const Login = () => {
      const ViewDemo = async( )=>{
       SetLoad(true)
     const id={email:"admin@gmail.com",password:"welcome"}
-      const result = await axios.post("https://e-commerce-backend-l51n.onrender.com/register/signin",{
+      const result = await axios.post("https://e-commers-backend-sigma.vercel.app/register/signin",{
         ...id,
       });
      if(result.data){
@@ -61,7 +61,7 @@ const Login = () => {
       e.preventDefault()
       SetLoad(true)
     
-      const response = await axios.post("https://e-commerce-backend-l51n.onrender.com/register/signin",{
+      const response = await axios.post("https://e-commers-backend-sigma.vercel.app/register/signin",{
         ...FormData,
       });
       

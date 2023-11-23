@@ -51,7 +51,7 @@ const handleSubmit= async(e)=>{
   if (FormData.password===FormData.confirmpassword) {
   
     console.log(FormData);
-    const response = await axios.post("https://e-commerce-backend-l51n.onrender.com/register/signup",{
+    const response = await axios.post("https://e-commers-backend-sigma.vercel.app/register/signup",{
       email:FormData.email,
          password:FormData.password
 
@@ -93,7 +93,8 @@ const handleSubmit= async(e)=>{
       <div className="text"> <span className="Confirmicon"> < HttpsIcon /></span>
      <TextField sx={{ ml:3,mt:3, }}id="standard" label="ConfirmPassword" type={(open1===true)?"password":"text"} variant="standard" required value={FormData.confirmpassword}   onChange={(e)=>SetFormData({...FormData, confirmpassword: e.target.value})} />
      <span className="eye"> { (open1 === true)?<VisibilityOffIcon onClick={Confirm}/> :<VisibilityIcon onClick={Confirm}/> }   </span>
-</div><br/>
+</div>
+<br/>
 <div className="bt" >
   <button className="signupbtn" type="submit" >Create</button> 
   <div className="sigin">  Allready Have Account <a className="ac"href="/">Sign-in </a> </div>
