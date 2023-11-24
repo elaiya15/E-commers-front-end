@@ -51,10 +51,9 @@ const handleSubmit= async(e)=>{
   if (FormData.password===FormData.confirmpassword) {
   
     console.log(FormData);
-    const response = await axios.post("https://e-commers-backend-sigma.vercel.app/register/signup",{
+    const response = await axios.post("https://e-commers-backend-llfj.onrender.com/signup",{
       email:FormData.email,
          password:FormData.password
-
         })
         if (response) {
           console.log(response);

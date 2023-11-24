@@ -41,37 +41,30 @@ const Login = () => {
 
      const ViewDemo = async( )=>{
       SetLoad(true)
-    const id={email:"admin@gmail.com",password:"welcome"}
-      const result = await axios.post("https://e-commers-backend-sigma.vercel.app/register/signin",{
-        ...id,
-      });
-     if(result.data){
-        // console.log(response.data);
-        localStorage.setItem("token",result.data);
+        localStorage.setItem("token","true");
           setTimeout(() => {
           SetLoad(!true) 
           navigate("/home");
-        }, 2000);
+        }, 2500);
     
     }
-     }
 
   
   const handleSubmit= async(e)=>{
       e.preventDefault()
       SetLoad(true)
     
-      const response = await axios.post("https://e-commers-backend-sigma.vercel.app/register/signin",{
+      const response = await axios.post("https://e-commers-backend-llfj.onrender.com/signin",{
         ...FormData,
       });
       
       if(response.data){
         // console.log(response.data);
         localStorage.setItem("token",response.data);
-          setTimeout(() => {
+         
           SetLoad(!true) 
           navigate("/home");
-        }, 2000);
+       
         
     
     }
